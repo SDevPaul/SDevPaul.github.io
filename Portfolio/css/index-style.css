@@ -1,0 +1,395 @@
+
+
+body {
+    display: flex;
+    margin: 80px;
+    padding: 0 24em 0 10em;
+    justify-content: center;
+    /* overflow-x:hidden; */
+    
+}
+
+
+
+main {
+    max-width: 800px;
+}
+
+
+/* right side navigation */
+aside {
+    position: fixed;
+    right: 8%;
+    top: 35%;
+}
+
+/* navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* navigation text is invinsible before hovering */
+nav a span {
+    opacity: 0;
+    padding-left: 8px;
+    transition: 0.2s, opacity 0.2s; 
+}
+
+/* navigation logo opacity */
+nav a {
+    display: flex;
+    opacity: 50%;
+    padding: 8px 0px;
+    text-decoration: none;
+    align-items: center;
+}
+
+/* navigation logo and text opacity increases and shown */
+nav a:hover span, a:hover {
+    opacity: 90%;
+    
+}
+
+/* Navigation logo enlarges */
+nav a:hover ion-icon {
+    transform: scale(1.4);
+}
+
+/* / Home Page Section */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 200px 0 200px 0;
+}
+
+/* Portfolio */
+h1 {
+    font-size: 36.5px;
+    line-height: 1em;
+    margin:0;
+    padding: 0;
+}
+
+
+/* 2nd Section | profile page */
+.about-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 150px 0 200px 0;
+    /* transform: translateX(400%); */
+}
+
+.about-infoBody {
+    width: 45%;
+    
+}
+
+.about-name {
+    font-size: 30.7px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 8px 0;
+}
+
+.about-img {
+    display: flex;
+}
+
+.profile {
+    border-radius: 12px;
+    max-width: 280px;
+    height: fit-content;
+}
+
+/* 3rd Section | web development page */
+.webdev-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 180px 0 200px 0;
+}
+
+.webdev-container {
+    border-radius: 8px;
+    width: 380px;
+    height: auto;
+    overflow: hidden; 
+    position: relative;
+    
+}
+
+.webdev-container video {
+    width: 100%;
+    height: 100%;
+}
+
+.webdev-infoBody {
+    width: 40%;
+}
+
+.webdev-btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+
+}
+
+#Github-btn {
+    background-color: #393838;
+    color:#F8F9F5;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    font-size: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+
+#More-btn {
+    color:#393838;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    font-size: 10px;
+    border: 1px solid #393838;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+
+/* 4th section | Game creation page */
+.game-page {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0 200px 0;
+}
+
+.game-page h4 {
+    padding: 14px 0px;
+}
+
+.game-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: start;
+    flex-wrap: nowrap;
+    gap: 10px;
+    opacity: 1;
+    transition: filter 0.6s ease-in-out;
+    filter: blur(0);
+}
+
+.container:hover > :not(:hover) {
+    filter: blur(7px);
+}
+
+.card-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter 0.6s ease-in-out;
+
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    height: 350px;
+    border-radius: 8px;
+    width: 100%;
+    overflow:hidden;
+    transition: flex 0.3s ease;
+}
+
+.card-box:hover {
+    flex: 2.5;
+    
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    position: absolute;
+    bottom:0;
+    max-width: 220px;
+    height: 80%;
+    overflow: hidden;
+}
+
+.card-body h4 {
+    color:#F8F9F5;
+    font-size: 12px;
+    padding: 4px 0;
+    opacity: 0%;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.card-body h2 {
+    color:#F8F9F5;
+    margin: 0;
+    font-size: 28px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+
+.card-box:hover .card-body h4{
+    opacity: 70%;
+    z-index: 2;
+} 
+.card-box:hover .card-body h2 {
+    opacity: 1;
+    z-index: 2;
+}
+
+.card-box:hover video {
+    filter:brightness(20%);
+}
+
+
+/* 5th Section | Camera works page */
+
+.camera-page {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0 200px 0;
+}
+
+.camera-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.camera-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+    max-width: 1200px;
+    padding-top: 14px;
+}
+
+.camera-cardBox {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+    overflow: hidden;
+    text-align: start;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.camera-cardBox:hover {
+    opacity: 1;
+    transform:scale(1.05);
+}
+
+
+.card-img {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.camera-page h3 {
+    padding-top: 24px;
+    font-size: 11px;
+}
+
+.camera-page h2 {
+    padding-top: 8px;
+    margin: 0;
+}
+
+/* 6th Section | Digital storytelling page */
+
+.storytelling-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 180px 0 100px 0;
+}
+
+.storytelling-btn {
+    display: flex;
+    margin-top: 20px;
+}
+
+.storytell-container {
+    border-radius: 8px;
+    width: 320px;
+    height: auto;
+    overflow: hidden; 
+    position: relative;
+}
+
+.storytell-container video {
+    width: 100%;
+    height: 100%;
+}
+
+.storytell-infoBody {
+    width: 45%;
+}
+
+#Yt-btn {
+    background-color: #ff0000ad;
+    color:#F8F9F5;
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    font-size: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+#Github-btn ion-icon, #Yt-btn ion-icon {
+    color:#F8F9F5;
+    font-size: 20px;
+    padding-right: 4px;
+    
+}
+
+
+
+
+/* Basic styling for hoverable elements */
+.hoverable {
+    display: inline-block;
+    
+}
+
+/* Hover effect */
+.hoverable:hover {
+    transform: scale(1.1); 
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+

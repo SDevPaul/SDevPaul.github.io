@@ -1,0 +1,44 @@
+body {
+    background-image: url("image/patterns.jpg");
+    background-size: cover;
+    padding: 40px;
+}
+
+header {
+    background-color: white;
+    color:#E72F52;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    padding: 4px;
+}
+
+h1 {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+button {
+    background-color: white;
+    height: 150px;
+    width: 420px;
+    border: 8px solid black;
+    border-radius: 20px;
+    margin: 1%;
+}
+
+button:hover {
+    background-color: #E72F52;
+    color: white;
+}
+
+main {
+    padding: 0px 15px
+}
