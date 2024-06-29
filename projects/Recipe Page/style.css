@@ -1,0 +1,123 @@
+/* general */
+
+/* all has a font of arial and the website background color is whiteish gray */
+html , body{
+	margin: 0%;
+	padding: 0%;
+	background-color: #eee;
+	font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+/* all heading tag and span will have a font of Garamond and color brown */
+h1, h2, span {
+	color: #54230d;
+	font-family: Garamond, serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+/* h2 tags font resize */
+h2 {
+	font-size: 28px;
+	margin: 0%;
+}
+
+/* height spacing to make the paragraph cleaner */
+p, li {
+	line-height: 30px;
+}
+	
+
+/** header **/
+
+/* this put the heading on the center */
+.container {
+	display: flex;
+	justify-content: center;
+}
+
+/* formatting the heading */
+.container h1 {
+	font-size: 36px;
+	padding: 2px 4px;
+	margin: 24px;
+	word-spacing: 20px;
+	letter-spacing: 20px;
+}
+/** end of header **/
+
+
+
+/** section 1 **/
+
+/* flex to put the content side by side while being on center */
+.section1 {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* resizing the original image */
+img {
+	width: 25%;	
+	max-width: 240px;
+	min-width: 180px;
+	margin: 0%;
+}
+
+/* sizing the paragaraph content  */
+.description {
+	padding: 0px 40px;
+	margin: 10px;
+	width: 600px;
+}
+
+/* unordered list is at the bottom center of the description section*/
+.description ul{
+	display: flex;
+	justify-content: center;
+}
+
+/* spacing between the lists */
+.description li {
+	display: inline;
+	padding: 0px 20px;
+}
+
+/** end of section 1 **/
+
+/** section 2 **/
+
+/* same as section 1 */
+.section2 {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* changing the left space of the unordered and ordered list */
+ul, ol {
+	padding-left: 20px;
+}
+
+/* height spacing betwen the lists */
+.section2 li {
+	padding-bottom: 15px;
+}
+
+/* size of the ingredients section */
+.ingredients {
+	width: 300px;
+	padding: 0px 20px;
+}
+
+/* size of the instructions section */
+.instructions {
+	width: 600px;
+	padding: 0px 20px;
+	
+}
+
+/** end of section 2 **/
+

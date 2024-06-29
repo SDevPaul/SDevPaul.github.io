@@ -1,0 +1,143 @@
+    html, body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        height: 100%;
+        padding: 40px 0 40px 0;
+    }
+
+
+
+    .label {
+        background-color: #F8F9F5;
+        z-index: 2;
+        top: 0;
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        padding: 14px 0;
+    }
+
+
+
+    .btn {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0);
+        padding: 8px 16px;
+
+        
+    }
+
+
+    main {
+        height: auto;
+        max-height: 100%;
+        width: 800px;
+        overflow: hidden;
+        border: 1px solid rgb(57, 56, 56, 0.45);
+        border-radius: 12px;
+        margin-bottom: 40px; 
+    }
+
+    .main-box {
+        overflow-x:hidden ;
+        height: 100%; 
+        overflow-y: scroll;
+        padding: 0px 65px;
+        
+    }
+
+    .main-box h2 {
+        margin: 8px 0;
+    }
+
+    .table {
+        display:flex;   
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .table-item {
+        width: 100%;
+        display: block; 
+        cursor: pointer; 
+        margin-bottom: 0; 
+        transition: margin-bottom 0.5s ease-in-out; 
+
+    }
+    
+    .item-show {
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid rgb(57, 56, 56, 0.45); */
+        padding: 8px; 
+        /* align-items: center; */
+    }
+
+    .item-btns {
+        display: flex;
+        gap: 8px;
+        top:0;
+        
+    }
+
+    .item-hidden {
+        display: block;
+        max-height: 0; /* height */
+        max-width: 100%;
+        overflow: hidden;
+        transition:max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+        padding: 0 8px;
+    }
+
+    .item-infoBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+        padding-right: 8px;
+    }
+
+
+
+
+    .item-infoBody p{
+        width: 50%;
+        text-align: justify;
+        line-height: 1.65em;
+    }
+
+    .table-item:hover .item-hidden {
+        max-height: 200px;
+        padding: 8px;
+        
+    }
+
+
+    .table-item:hover {
+        margin-bottom: 2px; 
+    }
+
+    #Preview-btn {
+        background-color: rgba(0, 128, 0, 0.727);
+        color:#F8F9F5;
+    }
+
+    #Github-btn {
+        background-color: #393838;
+    }
+
+    .btn ion-icon {
+        font-size: 20px;
+        color:#F8F9F5;
+    }

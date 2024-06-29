@@ -1,0 +1,66 @@
+/*/ General CSS /*/
+* {
+    color: #393838;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F8F9F5;
+}
+
+/* Headings and text navigation font */
+h1, h2, h4, h5, a, .breadcrumb-item-active {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Different font for h3, paragraph, and buttons */
+h3, p, .btn {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* default logo color and size */
+ion-icon {
+    color: #393838;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 16px;
+    margin: 0;
+    opacity: 75%;
+}
+
+h4 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+    opacity: 60%;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 12px;
+    opacity: 90%;
+    text-align: justify;
+    line-height: 1.65em;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 1;
+
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS External Link -->
+        <link rel="stylesheet" href="css/index-style.css">
+        <link rel="stylesheet" href="css/font-style.css">
+        <link rel="stylesheet" href="css/scrollanimation-style.css">
+
+        <title>Portfolio</title>
+
+        <!-- Website Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+            rel="stylesheet">
+    </head>
+    <body>
+
+        <main>
+            <!-- Navigation Side Bar -->
+            <aside>
+                <nav class="animate fade-in">
+                    <a href="#Profile">
+                        <ion-icon name="person"></ion-icon> <!--Icon-->
+                        <span>Profile</span>
+                    </a>
+                    <a href="#WebDevelopment">
+                        <ion-icon name="desktop"></ion-icon> <!--Icon-->
+                        <span>Web Development</span>
+                    </a>
+                    <a href="#GameCreation">
+                        <ion-icon name="game-controller"></ion-icon> <!--Icon-->
+                        <span>Game Creation</span>
+                    </a>
+                    <a href="#CameraWorks">
+                        <ion-icon name="camera"></ion-icon> <!--Icon-->
+                        <span>Camera Works</span>
+                    </a>
+                    <a href="#DigitalStorytelling">
+                        <ion-icon name="book"></ion-icon> <!--Icon-->
+                        <span>Digital Storytelling</span>
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Home Page -->
+            <section class="home-page">
+                <h1 class="animate fade-in">Hi👋<br> I am Paul</h1>
+                <p class="animate slide-in-bottom">A creative computing student in<br> Bath Spa University</p>
+            </section>
+
+            <!-- About Page -->
+            <section class="about-page" id="Profile">
+
+                <!-- Brief Information About Me -->
+                <section class="about-infoBody" >
+                    <h4 class="animate slide-in-bottom">About Me</h4>
+                    <h2 class="about-name animate slide-in-left hoverable">Paul Christian<br> Sevillejo 🧑‍💻</h2>
+                    <h3 class="animate slide-in-left hoverable">Creative Computing Year 1</h3>
+                    <p class="animate slide-in-left hoverable">
+                        Born in 2005, currently enrolled in the Creative Computing program at Bathspa University, 
+                        I'm embarking on an exciting journey to further hone my skills and knowledge in the realm 
+                        of technology and creativity. With each project and course module, I strive to push the 
+                        boundaries of innovation, exploring new concepts in UI/UX design and mastering the intricacies 
+                        of web development. I envision a future where I can seamlessly blend my passions for design and 
+                        technology, creating meaningful digital experiences that inspire and delight users worldwide. 
+                    </p>
+                </section>
+                
+                <!-- A Picture of me -->
+                <section class="about-img animate slide-in-right hoverable">
+                    <img class="profile" src="content/Paul/Paul Nikon.jpg" alt="Paul with Nikon Camera">
+                    
+                </section>
+
+            </section>
+
+            <!-- Web Development Page -->
+            <section class="webdev-page" id="WebDevelopment">
+
+                <!-- A Visual Animation -->
+                <section class="webdev-container animate hoverable">
+                    <video autoplay muted loop>
+                        <source src="content/Videos/webdev video.mp4" type="video/mp4" alt="a gif animation of a computer">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+                <!-- Description Information -->
+                <section class="webdev-infoBody">
+                    <h4 class="animate slide-in-bottom">Web Development</h4>
+                    <h2 class="about-img animate slide-in-right hoverable">Web Dev Exercises 💻</h2>
+                    <p class="about-img animate slide-in-right hoverable">As a student at my university, I've been entrusted with a dynamic challenge: crafting a series of 
+                        diverse websites, each with its own unique set of requirements. It's a thrilling opportunity to blend 
+                        creativity with technical skill, as I navigate through various design elements, functionalities, and 
+                        user experiences. This task not only hones my web development prowess but also cultivates a deeper understanding 
+                        of client needs and audience engagement. With each site I build, I embark on a journey of discovery, constantly 
+                        refining my craft and expanding my digital repertoire.  
+                    </p>
+                    
+                    <!-- Buttons -->
+                    <section class="webdev-btns animate slide-in-right">
+
+                        <!-- Github Button that opens a New Tab -->
+                        <a class="btn" id="Github-btn" href="https://github.com/SDevPaul/MyProjects" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                            open in Github  
+                        </a>
+
+                        <!-- Button that takes you to the Web Development Page that shows my Website Projects -->
+                        <a class="btn" id="More-btn" href="webdev-library.html">
+                            Explore More
+                        </a>
+                    </section>
+                    
+                </section>
+
+            </section>
+
+            <!-- Game Creation Page -->
+            <section class="game-page" id="GameCreation">
+
+                <h4 class="animate slide-in-bottom">Game Creation</h4>
+
+                <!-- Interactive Card that Shows my Game Projects-->
+                <section class="game-container">
+
+                    <!-- Left Card -->
+                    <a class="card-box animate slide-in-left" href="gamecreation-journeytoschool.html">
+
+                        <!-- Gameplay -->
+                        <video autoplay muted loop>
+                            <source src="content/Gameplay/Journey to school - Bitsy Gameplay .mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Title and the Game Software where I Created the Game -->
+                        <div class="card-body">
+                            <section>
+                                <h4>Bitsy.io</h4>
+                                <h2>🏫 Journey to School</h2>
+                            </section>
+                            
+                        </div>
+                    </a>
+
+                    <!-- Right Card -->
+                    <a class="card-box animate slide-in-right" href="gamecreation-redridinghood.html">
+
+                        <!-- Gameplay -->
+                        <video autoplay muted loop>
+                            <source src="content/Gameplay/Red Riding Hood Gameplay - Twine Gameplay.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <!-- Title and the Game Software where I Created the Game -->
+                        <div class="card-body">
+                            <section>
+                                <h4>Twine</h4>
+                                <h2>👧 Red Riding Hood</h2>
+                            </section>
+
+                        </div>
+                    </a>
+
+                </section>
+                
+            </section>
+
+            <!-- Camera Works Page -->
+            <section class="camera-page" id="CameraWorks">
+                <h4 class="animate slide-in-bottom">Camera Works</h4>
+
+                <!-- Card Boxes that takes you to the Respective Page -->
+                <section class="camera-container animate fade-in">
+
+                    <!-- Photography Page -->
+                    <a class="camera-cardBox" href="photo-library.html">
+
+                        <!-- A Picture of one of my Work -->
+                        <div class="card-img">
+                            <img src="content/Photography/Cafe display.jpg" alt="Cafe display for photography thumbnail">
+                        </div>
+                        
+                        <h3>Photography</h3>
+                        <h2>Photo Gallery 📸</h2> 
+                    </a>
+                    <!-- Videography Page -->
+                    <a class="camera-cardBox" href="video-library.html">
+
+                        <!-- A Picture of one of my Work -->
+                        <div class="card-img">
+                            <img src="content/Videography/Videography thumbnail.png" alt="Street sign for videography thumbnail">
+                        </div>
+
+                        <h3>Videography</h3>
+                        <h2>Video Gallery 📹</h2>
+                    </a>
+
+                    <!-- Stop Motion Project Page -->
+                    <a class="camera-cardBox" href="stopmotion.html">
+
+                        <!-- A Picture of the Stop Motion -->
+                        <div class="card-img">
+                            <img src="content/Videography/Stop motion thumbnail.jpg" alt="Paul holding a camera for stop motion thumbnail">
+                        </div>
+
+                        <h3>Other Projects</h3>
+                        <h2>Stop Motion 🎞️</h2>
+                    </a>
+                </section>
+                
+            </section>
+
+            <!-- Digital Storytelling Page -->
+            <section class="storytelling-page" id="DigitalStorytelling">
+
+                <!-- Description Section -->
+                <section class="storytell-infoBody">
+                    <h4 class="animate slide-in-bottom">Digital Storytelling</h4>
+                    <h2 class="about-img animate slide-in-left hoverable">Digital Story Creation with Adobe Express 📼</h2>
+                    <p class="about-img animate slide-in-left hoverable">I've been tasked with crafting a digital storytelling experience using Adobe Express, 
+                        and I've chosen a tale from the wisdom of Confucius, a renowned figure in Chinese folklore 
+                        since 1908. This story holds timeless lessons, delving into the intricacies of human nature 
+                        and the pursuit of virtue. Through Adobe Express, I'm excited to breathe new life into this 
+                        ancient wisdom, merging tradition with modernity to captivate and inspire our audience. With 
+                        creativity as my compass, I aim to create a digital narrative that honors the essence of 
+                        Confucian philosophy, inviting viewers to delve into its profound truths in a visually engaging 
+                        and accessible way.
+                    </p>
+
+                    <!-- A Button take takes you to a New Tab in Youtube to see the Video -->
+                    <section class="storytelling-btn animate slide-in-left">
+                        <a class="btn" id="Yt-btn" href="https://www.youtube.com/watch?v=3A1_y6t3IiA" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                            open in Youtube
+                        </a>
+                    </section>    
+
+                </section>
+
+                <!-- The Video of my Work -->
+                <section class="storytell-container animate hoverable">
+                    <video autoplay muted loop>
+                        <source src="content/Digital Storytelling/Digital storytelling formative 2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+        
+        <!-- Icon Scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- Animation Script -->
+        <script src="jscript/animation.js"></script>
+    </body>
+
+</html>
